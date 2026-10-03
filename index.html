@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <link rel="stylesheet" href="master.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<main>
+
+  <div class="card-1">
+<form>
+<div class="head-page">
+
+  <p>Mortgage Calculator</p>
+
+<button type="button" class="reset-button">Clear All</button>
+
+</div>
+
+</form>
+
+
+<div class="buttons">
+<div class="amount-button">
+  <label>Mortgage Amount</label>
+<div class="input-amount-button">
+  <span class="currency-icon">£</span>
+  <input type="number" name="amount" id="amount-input" required >
+  </div>
+</div>
+
+
+
+<div  class="grid">
+<div class="grid-item">
+  <label>Mortgage Term</label>
+<div class="input-amount-button-1">
+    <span class="currency-icon-1">years</span>
+  <input type="number" name="mortgage-term" id="term-input" required>
+
+  </div>
+</div>
+<div class="grid-item">
+  <label>Interest Rate</label>
+  <div class="input-amount-button-1">
+          <span class="currency-icon-1">%</span>
+  <input type="number" name="interest-rate" id="interest-input" required>
+
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Belong to radio buttons -->
+<div class="mortgage-type">
+<label>Mortgage Type</label>
+</div>
+<div class="radio-buttons">
+
+<form>
+
+  <div>
+<input type="radio" name="mortgage-type" id="repayment" value="Repayment" required>
+<label for="mortgage-type">Repayment</label>
+</div>
+
+<div>
+<input type="radio" name="mortgage-type" id="interest-only" value="Interest Only" required>
+<label for="mortgage-type">Interest Only</label>
+</div>
+
+</form>
+</div>
+
+</div>
+<!-- the end of grid -->
+
+
+<button type="submit" class="calculate-btn">
+    <img src="assets/images/icon-calculator.svg" alt="">
+    Calculate Repayments</button>
+
+</div>
+
+</div>
+<!-- the end of card-1 -->
+  <!-- Empty results end -->
+
+  <!-- Completed results start -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card-2">
+  <div class="head">Your results</div>
+
+  <p class="description">Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.</p>
+
+<div class="inner-card">
+  <div class="result">
+ <p>Your monthly repayments</p> 
+ <div class="monthly-amount">£0.00</div>
+</div>
+<hr class="divider">
+<div class="total">
+  <p>Total you'll  repay over the term</p>
+<div class="total-amount">£0.00</div>
+</div>
+
+  </div>
+  <!-- the end of inner-card -->
+</div>
+
+<!-- the end of card-2 -->
+
+
+
+
+  <!-- Completed results end -->
+  </main>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

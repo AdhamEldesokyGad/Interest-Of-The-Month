@@ -1,0 +1,305 @@
+body{
+height: 100vh;
+box-sizing: border-box;
+background-color: hsl(203, 41%, 72%);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+main{
+display: flex;
+flex-direction: row;
+width: 800px;
+height: 500px;
+font-size: 16px;
+font-family: 'Plus Jakarta Sans', sans-serif;
+background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-1{
+background-color: hsl(0, 0%, 100%);
+width: 50%;
+padding: 30px;
+border-radius:20px 0px 20px 20px ;
+}
+.card-1 div{
+margin-bottom: 10px;
+}
+.head-page{
+display: flex;
+justify-content: space-between;
+font-size: 20px;
+}
+
+.reset-button{
+width: fit-content;
+height: fit-content;
+cursor: pointer;
+margin-top: 25px;
+border: none;
+background-color:hsl(0, 0%, 100%) ;
+color: hsl(200, 26%, 54%) ;
+text-decoration: underline ;
+}
+
+.buttons label{
+display: flex;
+flex-direction: column;
+margin-bottom: 5px;
+color: hsl(200, 26%, 54%);
+}
+input {
+width: 95%;
+height: 30px;
+}
+
+.input-amount-button{
+display: flex;
+align-items: center;
+border: 1px solid hsl(200, 24%, 40%);
+border-radius: 5px;
+overflow: hidden;
+width: 100%;
+}
+.currency-icon {
+background-color: hsl(202, 86%, 94%);
+color: hsl(200, 24%, 40%);
+padding: 10px 15px;
+font-weight: bold;
+font-size: 18px;
+}
+
+.input-amount-button input {
+  padding-left: 15px;
+  padding-right: 15px;
+border: none;
+outline: none;
+font-size: 16px;
+flex: 1;
+}
+
+
+.input-amount-button-1 {
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+border:1px solid hsl(200, 24%, 40%) ;
+border-radius: 5px;
+overflow: hidden;
+width: 100%;
+
+}
+.currency-icon-1{
+
+background-color: hsl(202, 86%, 94%);
+color: hsl(200, 24%, 40%);
+padding: 10px 15px;
+font-weight: bold;
+font-size: 18px;
+
+}
+
+.input-amount-button-1 input {
+  padding-left: 15px;
+    padding-right: 15px;
+border: none;
+outline: none;
+font-size: 16px;
+flex: 1;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+-moz-appearance: textfield;
+}
+
+
+
+
+
+
+
+
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+}
+
+.grid-item {
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+
+
+
+
+
+
+
+.radio-buttons div{
+
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+gap: 20px;
+width: 60%;
+height: 20px;
+border: 1px solid hsl(61, 70%, 52%);
+border-radius: 8px;
+padding: 10px 15px;
+background-color: hsl(0, 0%, 100%);
+margin-bottom: 10px;
+font-size: 16px;
+}
+.radio-buttons label, 
+.radio-buttons input[type="radio"]{
+font-size: 16px;
+margin: 0;
+cursor: pointer;
+color: hsl(61, 70%, 52%);
+}
+
+.radio-buttons input[type="radio"] {
+appearance: none;
+-webkit-appearance: none;
+
+width: 18px;
+height: 18px;
+border: 2px solid hsl(61, 70%, 52%);
+border-radius: 50%;
+background-color: white;
+margin: 0;
+cursor: pointer;
+
+display: grid;
+place-content: center;
+}
+
+.radio-buttons input[type="radio"]::before {
+content: "";
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: hsl(61, 70%, 52%);
+transform: scale(0);
+transition: 0.1s transform ease-in-out;
+}
+
+.radio-buttons input[type="radio"]:checked {
+border-color: hsl(61, 70%, 52%);
+}
+
+.radio-buttons input[type="radio"]:checked::before {
+transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.calculate-btn{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: hsl(61, 70%, 52%);
+border: 1px solid transparent;
+border-radius:20px ;
+width: 70%;
+height: 40px;
+text-align: center;
+margin-top: 30px;
+gap:10px ;
+cursor: pointer;
+
+}
+
+.calculate-btn img{
+width: 20px;
+}
+
+
+
+
+
+
+
+/* the start of card-2 */
+.card-2 {
+background-color: hsl(202, 55%, 16%);
+  width: 50%;
+  padding: 30px;
+  color: white;
+  border-radius: 0px 20px 20px 80px;
+}
+.head{
+margin-top: 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.description {
+  font-size: 14px;
+  color: hsl(200, 26%, 54%);
+  line-height: 1.5;
+  margin-top: 15px;
+}
+.card-2 p{
+  font-size: 12px;
+  color:hsl(200, 26%, 54%);
+}
+
+
+
+
+.inner-card{
+  border-top:3px solid hsl(61, 70%, 52%) ;
+  border-radius: 10px;
+  background-color:rgba(0, 0, 0, 0.25);;
+  margin-top: 35px;
+  padding: 25px;
+}
+.inner-card p{
+color: hsl(200, 26%, 54%);
+  margin: 0;
+  font-size: 14px;
+}
+.monthly-amount {
+  color: hsl(61, 70%, 52%);
+  font-size: 48px;
+  font-weight: bold;
+  margin: 15px 0 25px 0;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid hsl(200, 26%, 54%);
+  opacity: 0.3;
+  margin: 0 0 25px 0;
+}
+
+.total-amount {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
